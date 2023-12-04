@@ -10,17 +10,24 @@ body{
     margin: 60px;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 header{
     display:flex;
     position: fixed;
     top: 0;
     left: 0;
+    height: 50px;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     background-color: #6096ba;
     z-index: 100;
 }
+
+
 
 .abrir-menu,
 .cerrar-menu {
@@ -297,16 +304,25 @@ article:hover{
 
 footer {
 
-    display:flex;
-    position:absolute;
-    left: 0;
-    margin-top: 115vw;
+    position:relative;
+    margin: 0;
+    bottom: 0;
+    top: 40px;
     width: 100%;
-    justify-content: center;
-    background-color: rgba(151, 229, 248, 0.1);
+    font-style: italic;
+    background: none;
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 3px 1px 1px #000000,
+    4px 2px 2px #000000,
+    5px 3px 3px #000000;
 }
 
-
+.pms{
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 5px solid #6069ba;
+}
 
 .field {
     margin-bottom: 10px;
@@ -362,6 +378,10 @@ footer {
     text-shadow: 3px 1px 1px #6069ba,
     4px 1px 1px #6069ba,
     5px 1px 1px #6069ba;
+}
+
+section[id]{
+    margin-top: 50px;
 }
 
 @media screen and (max-width : 550px) {

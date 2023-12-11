@@ -9,7 +9,7 @@ abrir.addEventListener("click", () => {
 
 cerrar.addEventListener("click", () => {
     barra.classList.remove("visible");
-})
+});
 
 const btn = document.getElementById('button');
 
